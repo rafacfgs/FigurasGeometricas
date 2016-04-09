@@ -25,17 +25,16 @@ public class Figuras {
 		double puntoy = teclado.nextDouble();
 		Punto p1= new Punto(x,y);
 		Punto p2= new Punto(puntox,puntoy);
-				
 		System.out.println("Distancia del primer al segundo punto: "+p1.calcularDistanciaPunto(p2));
 
-		double radio = 0;
+	
 					
 		System.out.println("Introduzca la coordenada x para el centro del circulo");
 		double a = teclado.nextDouble();
 		System.out.println("Introduzca la coordenada y para el centro del circulo");
 		double b = teclado.nextDouble();
 		System.out.println("Introduzca el radio del circulo");
-		radio = teclado.nextDouble();
+		double radio = teclado.nextDouble();
 		Circulo c =new Circulo(a,b,radio);
 		c.calcularArea(c.getRadio());
 		c.calcularPerimetro(c.getRadio());
